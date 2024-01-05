@@ -36,7 +36,7 @@ namespace _2Y_OOP_2324_MergeSort
                     Console.WriteLine("Unsorted Numbers...");
                     fm.massFileWriteAsync("UnsortedNumbers.txt", false, await convertToListString(numArr));
                     fm.fileWriteAsync("SortLog.txt", false, $"Algorithm start...");
-                    //displayArray(numArr);
+                    displayArray(numArr);
                 }
 
                 numArr = arrSplitter(numArr, "0", 0, sortAsc, diagnosticsMode);
@@ -52,7 +52,7 @@ namespace _2Y_OOP_2324_MergeSort
                 {
                     Console.WriteLine("Sorted Numbers...");
                     fm.massFileWriteAsync("SortedNumbers.txt", false, await convertToListString(numArr));
-                    //displayArray(numArr);
+                    displayArray(numArr);
                 }
             }
             Console.ReadKey();

@@ -47,6 +47,28 @@ namespace _2Y_OOP_2324_MergeSort
                     return false;
                 }
             }
+            else
+            {
+                pContent = new int[content.Count];
+                for (int x = 0; x < pContent.Length; x++)
+                {
+                    parse = int.TryParse(content[x], out pContent[x]);
+                    if (!parse)
+                        break;
+                }
+
+                if (pContent[2] != pContent.Length - 3)
+                {
+                    parse = false;
+                }
+
+                if (!parse)
+                {
+                    prContent = pContent;
+                    return false;
+                }
+
+            }
 
             prContent = pContent;
             return true;
